@@ -1,0 +1,891 @@
+/* Listagem */
+.listagem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*margin-left: 50%;*/
+    clear: left;
+    float: right;
+}
+
+.modelo_documento{
+    background-image: url(../img/icones24/page_edit.png);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+.listar_atendimento{
+    background-image: url(../img/icones32/atendimento.gif);
+    height:32px;
+    width:32px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.novo_assistido{ 
+    background-image: url(../img/icones32/users_add.png);
+    height:32px;
+    width:32px;
+    float: left;
+}
+
+.atualizar{
+    background-image: url(../img/atualizar.png);
+    height:32px;
+    width:32px;
+    float: left;
+}
+
+.listar_crime{ 
+    background-image: url(../img/icones32/algema1.gif);
+    height:32px;
+    width: 32px;
+    float: left;
+    background-color: White;
+    margin-bottom: 20px;
+}
+
+.cadastrarCrime{ 
+    background-image: url(../img/icones24/crime.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.cadastrar_civeis{ 
+    background-image: url(../img/icones24/fazenda_publica.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.extra_judiciais{
+    background-image: url(../img/icones24/comprovante.gif);
+    height:24px;
+    width:24px;
+    float: left;
+}
+
+.instancia_superior_civel{
+    background-image: url(../img/icones24/instancia_superior_civel.gif);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.pre_cadastro{
+    background-image: url(../img/icones24/pre_cadastro.gif);
+    height:24px;
+    width:24px;
+    float: left;
+}
+
+.idoso{
+    background-image: url(../img/icones24/idoso.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.processo_administrativo{
+    background-image: url(../img/icones32/padm.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.car{
+    background-image: url(../img/icones24/car.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+.psicossocial{
+    background-image:url(../img/icones32/nap.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+.capred{
+    background-image:url(../img/icones32/capred.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+.doc-add-hiposuficiencia{
+    background-image:url(../img/icones24/iconeH.png);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.relacionamento{
+    background-image:url(../img/icones32/relacionamento.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.relacionamentoRegistro{
+    background-image:url(../img/icones32/atendimento.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.cdd{
+    background-image:url(../img/icones24/cdd.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+
+.juizado_criminais{
+    background-image: url(../img/icones24/juizado_criminais.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.juventude_civeis{
+    background-image: url(../img/icones24/juventude_civeis.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.familia{
+    background-image: url(../img/icones24/familia.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.direito{
+    background-image: url(../img/icones24/direitos_humanos.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.mulher{
+    background-image: url(../img/icones24/nucleo_mulher.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.listar{
+    background-image: url(../img/icones32/users.png);
+    height:32px;
+    width:32px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.listar_assistido{
+    background-image: url(../img/icones32/users.png);
+    height:32px;
+    width:32px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.listarCeaflan{
+    background-image: url(../img/icones32/users.png);
+    height:32px;
+    width:32px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.apagar_ceaflan{
+    background-image: url(../img/icones24/window_delete.png);
+    height:24px;
+    width:24px;
+    float:left;
+    margin-bottom: 20px
+}
+
+.editar_ceaflan{
+    background-image: url(../img/icones24/window_edit.png);
+    height:24px;
+    width:24px;
+    float: right;
+    margin-right: 10px;
+}
+
+.novo_curador{
+    background-image: url(../img/icones3/business_user_add.png);
+    height:32px;
+    width:32px;
+    float:right;
+}
+
+.mais{
+    background-image: url(../img/icones24/add.png);
+    height:24px;
+    width:24px;    
+}
+
+.add_curador{
+    background-image: url(../img/icones32/curadoria.gif);
+    height:24px;
+    width:24px;
+    float:right;
+}
+
+.add_curador1{
+    background-image: url(../img/icones32/curadoria.gif);
+    height:24px;
+    width:24px;
+    float:right;
+}
+
+.listar_juventudes{
+    background-image: url(../img/icones32/page_search.png);
+    height:32px;
+    width:32px;
+    float: left;
+}
+.pesquisar{
+    background-image: url(../img/icones32/page_search.png);
+    height:32px;
+    width:32px;
+    float: left;
+}
+.add_juventudes{
+    background-image: url(../img/icones24/juventude.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.editar_funcionario1{
+    background-image: url(../img/icones32/business_user_edit.png);
+    height:32px;
+    width:32px;
+    float:left;
+}
+
+.cadastrar_dia{
+    background-image: url(../img/icones32/calendar_date.png);
+    height:32px;
+    width:32px;
+    float:left;
+}
+
+/* Fim da listagem */
+
+/* Padr�o */
+
+.cadastrar_atendimento{
+    background-image: url(../img/icones24/atendimento.gif);
+    height:24px;
+    width:24px;
+    float: right;
+}
+
+.agendar{
+    background-image: url(../img/icones24/calendar_add.png);
+    height:24px;
+    width:24px;
+}
+
+.execucao_penal{
+    background-image: url(../img/icones24/martelo.gif);
+    height:24px;
+    width:24px;
+    float: right;
+}
+
+.anterior{
+    background-image: url(../img/icones24/page_back.png);
+    height:24px;
+    width:24px;
+}
+.proximo{
+    background-image: url(../img/icones24/page_next.png);
+    height:24px;
+    width:24px;
+}
+.editar{
+    background-image: url(../img/icones24/window_edit.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.apagar{
+    background-image: url(../img/icones24/window_delete.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+
+.novo{
+    background-image: url(../img/icones24/application_add.png);
+    height:24px;
+    width:24px;
+}
+
+.novo_extra_judicial{
+    background-image: url(../img/icones24/application_add.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+
+.listar_configuracao{
+    background-image: url(../img/icones32/window_search.png);
+    height:32px;
+    width:32px;
+}
+
+/* Css Tela de Assistidos */
+.acompanhar_assistido{
+    background-image: url(../img/icones24/user_info.png);
+    height:24px;
+    width:24px;
+}
+
+.extrato_assistido{
+    background-image: url(../img/icones24/extrato.gif);
+    height:24px;
+    width:24px;
+}
+
+.acao_assistido_acao{
+    background-image: url(../img/icones24/folder.png);
+    height:24px;
+    width:24px;
+}
+
+.visualizar_usuario{
+    background-image: url(../img/icones24/calendar_add.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+.editar_usuario{
+    background-image: url(../img/icones24/user_edit.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+
+.icone_editar{
+    background-image: url(../img/icones24/user_edit.png);
+    height:24px;
+    width:24px;
+}
+.emitir_senha{
+    background-image: url(../img/icones24/page_up.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+.apagar_usuario{
+    background-image: url(../img/icones24/user_delete.png);
+    height:24px;
+    width:24px;
+    float:right;
+}
+
+.resetar_usuario{
+    background-image: url(../img/icones24/business_user_info.png);
+    height:24px;
+    width:24px;
+    float:right;
+}
+
+.bloquear_usuario{
+    background-image:url(../img/icones32/desbloquear_user.png);
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    float:right;
+}
+.desbloquear_usuario{
+    background-image:url(../img/icones32/bloquear_user.png);
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    float:right;
+}
+
+
+.novo_usuario{
+    background-image: url(../img/icones32/user_add.png);
+    height:32px;
+    width:32px;
+    float:right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* Css Tela de Funcion�rios */
+.editar_funcionario{
+    background-image: url(../img/icones24/business_user_edit.png);
+    height:24px;
+    width:24px;
+}
+
+.titularidade{
+    background-image: url(../img/icones24/business_user_info.png);
+    height:24px;
+    width:24px;
+}
+
+.rel_funcionario{
+    background-image: url(../img/icones24/page_up.png);
+    height:24px;
+    width:24px;
+}
+.apagar_funcionario{
+    background-image: url(../img/icones24/business_user_delete.png);
+    height:24px;
+    width:24px;
+}
+.listar_funcionario{
+    background-image: url(../img/icones32/business_user.png);
+    height:32px;
+    width:32px;
+    float:left;
+    margin: 10px;
+}
+
+.listar_defensor{
+    background-image: url(../img/icones32/business_user_search.png);
+    height:32px;
+    width:32px;
+    float:left;
+    margin: 10px;
+}
+
+.espelho_assistido{
+    background-image: url(../img/icones24/user_search.png);
+    height:32px;
+    width:32px;
+    float:left;
+    margin: 10px;
+    background-repeat: no-repeat;
+}
+
+.novo_funcionario{
+    background-image: url(../img/icones32/business_user_add.png);
+    height:32px;
+    width:32px;
+    margin-top: 230px;
+    margin-left: 330px;
+}
+
+/* Css Tela de Tipo A��o Documento */
+
+.visualizar_tp_doc{
+    background-image: url(../img/icones24/notebook_search.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+.editar_tp_doc{
+    background-image: url(../img/icones24/notebook_edit.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+.apagar_tp_doc{
+    background-image: url(../img/icones24/notebook_delete.png);
+    height:24px;
+    width:24px;
+    float:right;
+}
+
+.visualizar_dados{
+    background-image: url(../img/icones24/window_search.png);
+    height:24px;
+    width:24px;
+    float:right;
+}
+.visualizar_dados_acao{
+    background-image: url(../img/icones24/window_search.png);
+    height:24px;
+    width:24px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Css Tela de Escalas */
+.visualizar_Escala{
+    background-image: url(../img/icones24/calendar_add.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+.editar_escala{
+    background-image: url(../img/icones24/user_edit.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+.apagar_escala{
+    background-image: url(../img/icones24/user_delete.png);
+    height:24px;
+    width:24px;
+    float:right;
+}
+
+/* Css Tela de Assistidos */
+
+.agendar_assistido{
+    background-image: url(../img/icones24/calendar_add.png);
+    height:24px;
+    width:24px;
+}
+.editar_assistido{
+    background-image: url(../img/icones24/user_edit.png);
+    height:24px;
+    width:24px;
+}
+.apagar_assistido{
+    background-image: url(../img/icones24/user_delete.png);
+    height:24px;
+    width:24px;
+}
+
+.flagrante_assistido{
+    background-image: url(../img/icones24/ceaflan_capred.gif);
+    height:24px;
+    width:24px;
+    float:right;
+}
+.visualizar{
+    background-image: url(../img/icones24/users.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.comprovante{ 
+    background-image: url(../img/icones24/comprovante.png);
+    height:64px;
+    width:64px;
+}
+
+.delete{
+    background-image: url(../img/icones24/delete.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.del{
+    background-image: url(../img/icones24/delete.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.comprovante_icone{ 
+    background-image: url(../img/icones24/comprovante.gif);
+    height:24px;
+    width:24px;
+}
+
+.comprovante_car{
+    background-image: url(../img/icones24/comprovante.gif);
+    height:24px;
+    width:24px;
+    float: left;
+}
+
+/* Css Tela A��es */
+.acao{
+    background-image: url(../img/icones24/folder.png);
+    height:24px;
+    width:24px;
+}
+.cadastrar_acao{
+    background-image: url(../img/icones24/folder_add.png);
+    height:24px;
+    width:24px;
+}
+.editar_acao{
+    background-image: url(../img/icones24/folder_edit.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+.apagar_acao{
+    background-image: url(../img/icones24/folder_delete.png);
+    height:24px;
+    width:24px;
+    float:right;
+}
+.visualizar_acao1{
+    background-image: url(../img/icones32/folder_search.png);
+    height:32px;
+    width:32px;
+}
+.visualizar_acao{
+    background-image: url(../img/icones24/folder_search.png);
+    height:24px;
+    width:24px;
+    float:left;
+}
+
+/* Css Telas */
+
+.apagar_telas{
+    background-image: url(../img/icones24/application_delete.png);
+    height:24px;
+    width:24px;
+}
+
+.editar_telas{
+    background-image: url(../img/icones24/application_edit.png);
+    height:24px;
+    width:24px;
+}
+.cad_edicao_processo{
+    background-image: url(../img/icones24/application_edit.png);
+    height:24px;
+    width:24px;
+}
+.novo_telas{
+    background-image: url(../img/icones24/application_add.png);
+    height:24px;
+    width:24px;
+}
+
+/* Css Tela de Perfil */
+.visualizar_perfil{
+    background-image: url(../img/icones24/image.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.apagar_perfil{
+    background-image: url(../img/icones24/image_delete.png);
+    height:24px;
+    width:24px;
+    float: right;
+}
+.editar_perfil{
+    background-image: url(../img/icones24/image_edit.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.grafico_1{
+    background-image: url(../img/icone_grafico/grafico.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.espelho{
+    background-image: url(../img/icones24/application_search.png);
+    height:24px;
+    width:24px;
+    float: left;
+    background-repeat: no-repeat;
+}
+.espelho_assist{
+    background-image: url(../img/icones24/application_search.png);
+    height:24px;
+    width:24px;
+    float: left;
+    background-repeat: no-repeat;
+}
+.print{
+    background-image: url(../img/icones32/9854_32x32.png);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.afastamentos{
+    background-image: url(../img/icones24/afastamentos.gif);
+    height:24px;
+    width:24px;
+    float: left;
+}
+.novo_feriado{
+    background-image: url(../img/icones32/users_add.png);
+    height:32px;
+    width:32px;
+    float: left;
+}
+
+.alterar_defensores{
+    background-image: url(../img/icones24/users.png);
+    height:24px;
+    width:24px;   
+}
+
+.fundiario{
+    background-image: url(../img/icones24/fnd.gif);
+    height:24px;
+    width:24px;   
+}
+
+.juizado_especial_civel{
+    background-image: url(../img/icones24/juizado_especial_civel.gif);
+    height:24px;
+    width:24px;
+    float: left;
+    margin-bottom: 5px; 
+}
+
+#acoes{
+    background-color: #FFFFFF;
+    border: solid 1px green;
+    float: right;
+    margin:1px;
+    clear: right;
+}
+
+.bt_painel_defensor {
+    color: #FFF;
+    text-align: center;
+    /* Inter Semi-bold 16px */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 200;
+
+  color: #FAFAFA !important;
+  font-size: 14px;
+  height: 34px;
+  text-align: center;
+  display: flex;
+  margin-right: 25px;
+  padding: 6px 12px!important;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: linear-gradient(to top,#2EBD59, #2EBD59);
+  /* Elevation */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+@media (max-width: 768px) {
+    /* CSS styles for screens 768 pixels or less */
+    .bt_painel_defensor {
+        margin-right: 0px;
+    }
+    .navbar-nav li {
+        text-align: center;
+    }
+    .input-header-box {
+        display: flex;
+        justify-content: center;
+    }
+    /* Add more styles as needed */
+  }
+
+.bt_painel_defensor p {
+    margin: 0;
+}
+
+.num_unica_btn {
+
+    border-radius: 0px 6px 6px 0px;
+    border-top: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    border-left: none;
+    padding: 0px 12px;
+    background: #565757;
+    height: 34px;
+    color: #FFF;
+    
+}
+
+
+.consultaPJE {
+    margin-top: -10px;
+    margin-right:2px;
+}
+/*
+.buttonConsulta {
+    font-size:15px;
+    font-family:Arial;
+    width:183px;
+    height:30px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#124d77;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    text-shadow:inset 0px 1px 0px #154682;
+    background:linear-gradient(#007dc1, #0061a7);
+	cursor: pointer;
+	padding: 5px;
+}
+*/
+.buttonConsulta {
+    font-size:14px;
+    font-family:Arial;
+    width:183px;
+    height:30px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#7b807a;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    box-shadow:inset 0px 1px 0px 0px #bbc1ba;
+    text-shadow:inset 0px 1px 0px #939992;
+    background:linear-gradient(#91a891, #2c3726);
+    cursor: pointer;
+    padding: 5px;
+}
+  
+.buttonConsulta:hover {
+    background: linear-gradient(#415989, #2e466e);
+    color:#ffffff;
+}
+
+.buttonDica {
+  font-size:15px;
+  font-family:Arial;
+  width:90px;
+  height:18px;
+  border-width:1px;
+  color:#333333;
+  border-color:#ffaa22;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  text-shadow: 0px 1px 0px #ffee66;
+  background:linear-gradient(#ffec64, #ffab23);
+}
+
+.buttonDica:hover {
+  background: linear-gradient(#ffab23, #ffec64);
+}

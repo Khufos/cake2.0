@@ -1,0 +1,157 @@
+/* novo menu */
+#marca img {
+	margin-left: 4rem !important;
+}
+.navbar-brand {
+	display: flex;
+	justify-content: center;
+
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+.menu {
+	background-color: #187B43;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 60px;
+	height: 50px;
+}
+
+.menu svg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu:hover{
+	background-color: #033b1b !important;
+}
+.menu:focus{
+	background-color: #033b1b !important;
+}
+	
+
+.nameDef{
+	display: flex;
+	margin: 0px 5px;
+	flex-direction: column;
+
+	
+	font-family: "Inter";
+}
+
+.nameDef span {
+	font-size: 10px;
+	display: flex;
+	align-items: flex-end;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.vinculoDef {
+	font-weight: 600;
+}
+.input-header-box {
+	border-radius: 6px 6px 6px 6px;
+	margin-top: 8px;
+	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+.num_unica {
+	height: 34px !important;
+	border-radius: 6px 0px 0px 6px;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+	border-left: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+	padding: 0 10px;
+	background: #FFF;
+	outline: none;
+	text-decoration: none;
+}
+.img-logo-2 {
+	width: 31px ;
+	height: 30px;
+}
+.custom-brand {
+	float: left;
+    height: 50px;
+    padding: 15px 15px 15px 0px;
+    font-size: 22px;
+    line-height: 20px;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.custom-brand:hover {
+	float: left;
+    height: 50px;
+    padding: 15px 15px 15px 0px;
+    font-size: 22px;
+    line-height: 20px;
+	text-decoration: none;
+	color: #FFF;
+}
+.algo{
+
+	width: 158px;
+}
+
+
+
+/* css para ser aplicado ao conteudo principal do sigad  afim de reduzir o width de acordo com exibição do menu e painel de senhas. Rafaela Fernandes 02/05/2018    */
+.conteudo-left-menu{
+		width: 84% !important;
+		margin-left: 16% !important;
+		transition: all 0.1s;
+	}
+
+
+
+.conteudo-right-painel{
+		width: 84% !important;
+		margin-right: 16% !important;
+		transition: all 0.1s;
+}
+
+.conteudo-menor{
+	width: 68% !important;
+	margin-left: 16% !important;
+	margin-right: 16% !important;
+	transition: all 0.1s;
+}
+
+
+.alinhar-flexbox {
+	display: flex!important;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.alinhar-flexbox p {
+	margin: 0px ;
+	display: flex!important;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+}
+
+.alinhar-flexbox .glyphicon-chevron-down {
+	margin: 0px ;
+	display: flex!important;
+	justify-content: flex-end;
+	align-items: flex-end;
+	height: 50px;
+	padding: 15px 0px 13px 0px ;
+
+}
+
+.navbar-inverse {
+	background-image: linear-gradient(to bottom, #359D54 0%, #359D54 100%) !important; 
+
+}

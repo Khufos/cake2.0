@@ -1,0 +1,41 @@
+table.tablesorter {
+	font-size: 11px;	
+	border: 0px solid #000;
+	width: 100%;
+	background-color: #BBC3AF;
+}
+
+table.tablesorter th {
+	padding: 0px;
+	font-size: 11px;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+table.tablesorter td {
+	padding: 5px;
+}
+saa {
+overflow: auto;
+}
+table.tablesorter .header {
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	padding-top: 0px;
+	text-align: center;
+}
+
+table.tablesorter thead tr{
+	background-image: url(bg_header_table.jpg);
+	background-repeat: repeat-x;
+}
+
+table.tablesorter .headerSortUp {
+	background-image: url(asc.jpg);
+	background-repeat: no-repeat;
+}
+
+table.tablesorter .headerSortDown {
+	background-image: url(desc.jpg);
+	background-repeat: no-repeat;
+}

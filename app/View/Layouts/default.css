@@ -1,0 +1,586 @@
+.actions {
+    border-right-style: solid;
+    border-right-color: #869378;
+    border-right-width: 3px;    
+}
+
+.actions td{
+    max-width: 130px;
+}
+
+.actions a {
+    float: left;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+select{
+    text-transform: uppercase;
+    max-width: 300px;
+}
+
+#bandeira{
+    background-image:url(../img/bandeiraBahia.png);
+    background-repeat:no-repeat;
+    width:29px;
+    height:21px;
+    margin-top:auto;
+    top:auto;
+
+
+}
+#cartilhaSigad{
+    background-image:url(../img/manual.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left; 
+    margin-left: 10px;
+    height: 24px;
+    position: relative;
+}
+div #cartilhaSigad span{
+    font-size: 13px !important;
+    margin-left: 24px;    
+    font-style: oblique;
+}
+
+div.ui-datepicker {
+    font-size: 75%;
+}
+
+body {
+    background: url(../img/bg1.gif) repeat;
+    font-family:'lucida grande','verdana','helvetica','arial','sans-serif';
+    behavior: url(csshover.htc);
+    margin: 0;
+    padding: 0;
+}
+
+div#aba_principal li{
+    font-weight: bold;
+}
+
+#box_principal {
+    position:relative;
+    top:0%;
+    float:none;    
+    width:960px;
+}
+
+#debuger{
+
+}
+
+.padrao td{
+    xpadding-top: 4px;
+    xpadding-right: 2px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.padrao, .padrao_table{
+    padding-bottom: 20px;
+    padding-right: 2px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.padrao_table{
+    padding-bottom: 13px;
+}
+
+#header{
+    background:url(../img/novo_topo.jpg) no-repeat scroll 0 0 transparent;   
+    height:100px;
+    z-index: 0;
+    *height:100px;  
+    width: 100%;
+}
+
+#ft{
+    background:url(../img/ft.jpg) no-repeat scroll 0 0 transparent;
+    float: right;
+    height:150px;
+    width: 309px;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+#topo_sigad{
+    margin-top: -35px;
+    margin-left: 0px;
+    background:url(../img/logo1.png) no-repeat scroll 0 0 transparent;
+    width: 300px;
+    height: 233px;
+    border-left: 1px solid transparent;
+    border-right: 5px solid transparent;
+    float: left;
+    z-index: 3;
+    *border: none;
+}
+
+div#barra_topo{
+    background:url(../img/menu/barra_menu.gif) repeat-x;
+    width: 100%;
+    height: 30px;
+    padding: 5px 0 0 0;
+    /*
+margin-top: 10px;
+margin-left: 38px; 
+    */
+}
+
+div#barra_topo span{
+    font-family: Verdana,Arial,sans-serif;
+    margin-right: 10px; 
+    color: #fff;
+    text-align: right;
+    font-size: 14px;
+}
+
+div#barra_topo div#title{
+    text-align: right;
+}
+
+legend{
+    font-weight:bold;
+    font-size: 'Calibri';
+    font-size: 12px;
+}
+
+#logo{
+    height:auto;
+    position:absolute;
+    top:-10px;
+    width:auto;
+    z-index:1;
+}
+
+div{
+    xmax-width:1024px;
+}
+
+fieldset{
+    background-color: #bbc3af;
+    border: 2px solid #869378;
+    margin-bottom: 10px;
+    xmin-width: 770px;
+    xmin-height: 150px;
+    margin-top: 5px;
+    *margin-top: 11px;
+    color: black;
+    padding: 4px;
+    *float: left;
+}
+
+#tabs fieldset{
+    min-width: 600px;
+    margin-bottom: 10px;
+}
+
+.beneficio{
+    width:400px;
+    float:left;
+    padding: 2px;
+        *width: 415px;
+}
+
+.beneficio_td{
+    padding-top: 15px;
+}
+
+.beneficio_dt{
+    width:90px;
+    *width:90px;
+    padding-top:15px;
+}
+
+.medida{
+    width:370px;
+    float:right;
+    padding: 2px;
+    *width:390px;
+}
+
+.medida_td{
+    width:90px;
+    padding-top:3px;
+    *padding-top:0px;
+}
+
+#rodape {
+
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/barra.jpg) repeat-x;
+    width:960px;
+    height: 23px;
+}
+
+
+
+#font_rodape{
+    font-size : 12px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'times New Roman';
+    padding-top: 2px;
+    color: #ffffff;
+
+}
+/*
+#fundo_branco{
+    font-size : 12px;
+    text-align: center;
+    font-family: 'times New Roman';
+    margin-right: 10px;
+    background-color: #EFEEEE;
+    min-width: 960px;
+        width:960px;
+}
+
+#fundo_branco span{
+    font-size : 12px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'times New Roman';
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    width: 990px;
+    height: 30px;
+}
+*/
+#box_content{
+    min-height:300px;
+    width: 795px;
+    float:left;
+    clear: right;
+    background-color: #EFEEEE;
+    margin-bottom: 30px;
+}
+
+#pessoa{
+    height:20px;
+    width: 950px;
+    text-align:right;
+    padding-right:10px;
+}
+
+#pessoa span{
+    text-align:right;
+    margin-right: 20px;
+}
+
+
+.cabecalhoRel tr th{
+    border-right: 1px solid #bbc3af;
+    text-align: center;
+    font-family: 'Lucida Grande';
+    background: url(../img/barra_grid.gif) repeat-x;
+    height: 34px;
+    margin-left: -5px;
+    padding: 1px;
+    font-size: 12px;
+}
+
+
+.scroll{
+    overflow-y:scroll;    
+    width: auto;
+    max-height: 200px;
+    text-align: center;
+    float: left;
+    clear: both;
+    border: 3px solid #869378;
+    border-right: none;
+    *height: 250px;    
+}
+
+.scroll_space{
+    overflow-y:scroll;
+    float: left;
+    clear: both;
+    xpadding-right: 5px;
+    border-left: 4px solid #869378;
+}
+
+.grid tr:hover {
+    background: #F0F0F0;
+}
+
+
+.grid{
+    border-collapse:collapse;
+    clear: both;
+    xmin-width: 600px;
+}
+
+.grid td{
+    border-left: 1px solid #bbc3af;
+    font-family: Times New Roman;
+    font-size: 14px;
+    text-align: center;
+    padding: 1px;
+}
+
+.grida tr:hover {
+    background: #F0F0F0;
+}
+
+.grida{
+    border-collapse:collapse;
+    text-align: left;
+    min-width: 340px;
+    clear: both;
+}
+
+.grida td{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    font-family: Times New Roman;
+    font-size: 14px;
+    text-align: center;
+}
+
+.grida th{
+    font-size: 12px;
+    xpadding: 10px 10px;
+}
+
+.historico{
+    font-size: 11px;
+    min-width: 700px;
+    *width: 800px;
+}
+
+.historico th, .historico tr{
+    font-size: 12px;
+    color: Black;    
+    padding: 2px;
+}
+
+.historico td{
+    padding: 2px;
+    text-align: center;    
+}
+
+.historico a{
+    font-size: 12px;
+    color: Black;
+}
+
+.ajuda{
+    font-size: 12px;
+    color: #009be3;
+}
+
+
+
+.agendar{
+    border:0;
+}
+.over {
+    background: #000000;
+}
+.altrow{
+    background: #CCCCCC;
+}
+
+.paging{
+    font-family:Georgia;
+    font-size: 15px;
+    text-align: center;
+}
+
+.imp_rodape{
+    padding-bottom: 5px;
+}
+
+.controle{
+    width: 2480px;
+    height: 3508px;
+    background-color: Fuchsia;
+    border: 1px solid black;
+}
+
+.border_right{
+    border-right: 1px solid;
+}
+
+.border_left{
+    border-left: 1px solid;
+}
+
+
+/*#tudo{
+    left:50%;
+    width:960px;
+    margin-left:-480px;
+    position:absolute;
+    margin-top:-18px;
+    background-color:#EFEEEE;
+}*/
+#tudo{
+    width:960px;
+    display: table;
+    margin: -26px auto 0;
+    background-color:#EFEEEE;
+}
+.Acao_editada {
+    background-color:#CCFF99;
+
+}
+
+/* Destaca uma TR ao passar o mouse */
+.selectedTR tbody tr:hover {
+    background-color:#E6FFE6;
+}
+
+.bordaFina{
+    border:1px solid #000000;
+    border-collapse:collapse;
+}
+
+.bordaFina td, .bordaFina th{
+    border:1px solid #000000;
+    border-collapse:collapse;
+    padding:1px 3px;
+}
+
+.tbl_view tr td{
+    padding:1px 3px;	
+}
+
+.formulario label{
+    font-weight: bold;
+    font-size: 14px;
+    float: left;  
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 20px;
+}
+
+.quebra{
+    clear: left;
+    padding-top: 10px;
+}
+
+.form-parte{
+    background-color: #F5F5F5;
+    width: 98%;
+    max-width: 800px;
+}
+
+.form-parte legend{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.labelEsqueda{
+    float: left;
+    margin-right: 15px;
+}
+
+.consultaProcessual{
+    width: 800px; 
+    background-color: white; 
+    margin: 0 auto 40px auto; 
+    border-radius: 10px; 
+    box-shadow: #000 1px 1px 5px;
+}
+
+.menu-fila{
+    list-style: none;
+}
+
+.menu-fila li a{
+    font-weight: bold;
+    font-style:normal;
+    color:#6e8f59;
+    background:#e3e6d4;
+    border:2px solid #d5dbb6;
+    box-shadow:0px 0px 3px #757575;
+    -moz-box-shadow:0px 0px 3px #757575;
+    -webkit-box-shadow:0px 0px 3px #757575;
+    border-radius:10px 10px 10px 10px;
+    -moz-border-radius:10px 10px 10px 10px;
+    -webkit-border-radius:10px 10px 10px 10px;
+    padding:5px 5px;
+    margin:7px 0;
+    width: 177px;
+    display: block;
+ }
+
+.menu-fila li a:active{
+cursor:pointer;
+position:relative;
+top:2px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+    overflow: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    margin: 10% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+    background: #fff; /* Fundo branco para a área do modal */
+    border-radius: 4px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-header {
+    background-color: #3f883f;
+    color: white;
+    padding: 14px;
+    border: 1px solid #4c574c;
+    border-radius: 4px 4px 0 0;
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow: auto;
+    padding: 20px; /* Adapte conforme necessário */
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.glyphicon-remove {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.glyphicon-remove:hover {
+    color: #ccc;
+}

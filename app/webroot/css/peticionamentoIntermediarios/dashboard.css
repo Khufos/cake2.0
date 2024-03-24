@@ -1,0 +1,41 @@
+.cards-demonstrativos{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 1rem;
+}
+.filtro{
+    border: 1px solid #dedede;
+    padding: 1rem;
+    border-top: 1px solid #097543;
+}
+.filtro h3{
+    font-weight: 500;
+}
+.filtro label{
+    font-weight: 500;
+    font-size: 18px;
+}
+.filtro form{
+    display: flex;
+    align-items: center;
+    gap: 0.81rem;
+    margin-left: 2rem;
+}
+.filtro select{
+    height: 40px;
+    width: 250px;
+}
+
+.sessoes-graficos{
+    padding-left: 0px !important; 
+    padding-right: 0px !important;
+}
+
+.btn-pesquisar, .btn-redefinir{
+    float: left !important;
+    margin-top: 23px;
+}
+
+.btn-redefinir{
+    margin-right: 8px;
+}

@@ -1,0 +1,51 @@
+.pagination > li > span, .disabled{
+    background-color: #e3e3e3 !important;
+    border-color: rgb(221, 221, 221) !important;
+    color: #938f8f !important;
+    cursor: default;
+    z-index: 2;
+}
+
+.pagination > li > a {
+    cursor: pointer;
+}
+
+.pagination > li > span:hover {
+    z-index: 3;
+    color: #000;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.table .glyphicon {
+    font-size: 13px;
+}
+
+.glyphicon:hover {
+    color: darkgreen;
+    cursor: pointer;
+}
+
+.my-modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.my-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.my-modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+/* .modalInfor{
+    background-color: "#337ab7";
+}
+.modalSucesso{
+    background-color: "#419641";
+} */

@@ -1,0 +1,244 @@
+﻿<?php
+$link = $this->webroot;
+$idAtendente = true;
+
+$logof = $link . "usuarios/logout";
+
+$processos = $this->Js->request(
+        array('controller' => 'usuarios',
+            'action' => 'logout?trs=1'));
+
+$this->SessionDestroy = $this->Js->request(
+        array('controller' => 'usuarios',
+            'action' => 'logout?trs=1')
+);
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGAD - GESTÃO DE ATENDIMENTO</title>
+        <?php //if (!$this->Session->read('userDetect')) { ?>
+        <!--            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />  -->
+        <?php //} ?>
+        <?php echo $this->Html->meta('icon', 'img/favicon.png'); ?>
+        <!--        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+        <!--        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
+        <?php
+        echo $this->Html->charset('UTF-8');
+        echo $this->Html->css('/bootstrap/css/bootstrap');
+        echo $this->Html->css('/bootstrap/css/bootstrap-theme');
+        echo $this->Html->css('/bootstrap/css/bootstrap-aplication');
+        echo $this->Html->css('validadorJquery/validationEngine.jquery');
+        echo $this->Html->css('agenda');
+        echo $this->Html->css('auto_complete');
+        echo $this->Html->css('jquery-ui-1.11.4');
+        echo $this->Html->css('agendamento');
+        echo $this->Html->css('message');
+        echo $this->Html->css('/tablesorter/themes/blue/style');
+        //echo $this->Html->script('jquery/jquery-1.4.2');
+        echo $this->Html->script('jquery/jquery-1.11.1.min');
+        echo $this->Html->script('jquery/jquery-ui-1.11.0');
+        echo $this->Html->script('tiny_mce/tiny_mce');
+        echo $this->Html->script('/bootstrap/js/bootstrap');
+        echo $this->Html->script('jquery/jquery-collapsible');
+        echo $this->Html->script('/tablesorter/jquery.tablesorter');
+        echo $this->Html->script('/tablesorter/jquery.metadata');
+        echo $this->Html->script('validacao');
+        echo $this->Html->script('ui.core');
+        echo $this->Html->script('jquery/jquery.mask.min');
+        echo $this->Html->script('config');
+        echo $this->Html->script('operacional');
+        echo $this->Html->script('jquery.quicksearch');
+        echo $this->Html->script('jquery/jquery.battatech.excelexport');
+        echo $this->Html->script('jquery.popupWindow');
+
+# Validador jQuery
+        echo $this->Html->script('validadorJquery/js/jquery.validationEngine-pt');
+        echo $this->Html->script('validadorJquery/js/jquery.validationEngine');
+        echo $this->Html->script('jquery/jQueryUiExtends/jquery.dialogextend.min');
+        ?>
+    </head>
+
+    <body>        
+        <?php
+        if (isset($isDefensor) && ($isDefensor)) {
+            ?>
+            <!-- Modal -->
+            <!--            <div class="modal fade" id="modalCiente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Agendamento</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+            <?php
+        }
+        ?>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div id="marca">   
+                        <?php echo $this->Html->image('IconDefensoria.png'); ?>
+                        <a class="navbar-brand" href="<?php echo $this->webroot; ?>" title="SISTEMA INTEGRADO DE GESTÃO DE ATENDIMENTO" alt="SISTEMA INTEGRADO DE GESTÃO DE ATENDIMENTO">SIGAD</a> 
+                    </div>                    
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">   
+                    <div class="navbar-right">
+                        <p class="navbar-text">
+                            <?php
+                            $pessoa = $this->Session->read('Pessoa.nome');
+                            $link = $this->Session->read('webroot');
+                            $trocaSenha = $link . "usuarios/trocar_senha";
+                            if (!empty($pessoa)) {
+                                echo "<span>" . $pessoa . "</span>";
+                            }
+                            ?>
+                        </p>
+                        <ul  class="nav navbar-nav">
+<!--                            <li><?php //echo $this->element('contador_sessao');   ?></li>-->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle glyphicon glyphicon-cog" data-toggle="dropdown" title="Configurações" alt="Configurações"></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="<?php echo $trocaSenha; ?>">Alterar Senha</a></li>
+                                    <li><?php echo $this->Html->link('Melhorias do SIGAD', array('controller' => 'melhoria_aplicadas', 'plugin' => null));
+                            ?></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle glyphicon glyphicon-question-sign" data-toggle="dropdown" title="Ajuda" alt="Ajuda"></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <?php
+                                        $wroot = $this->webroot;
+                                        $caminho = "http://www.defensoria.ba.def.br/portal/arquivos/downloads/SIGAD/CARTILHA_DO_SIGAD.pdf";
+                                        ?> 
+                                        <a href="<?php echo $caminho ?>" target="_blanck" title="Visualizar Cartilha do SIGAD">
+                                            Cartilha do Sigad
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <?php if ($MOBILE) { ?>
+                                <li>
+                                    <?php
+                                    echo $this->Html->link('Versão Mobile', array('controller' => 'mobiles', "action" => 'habilitarLayoutMobile'));
+                                    ?> 
+                                </li>
+                            <?php } ?>
+                        </ul>                        
+                        <?php echo $this->Html->link($this->Html->div('glyphicon glyphicon-off', ''), array('action' => 'logout', 'controller' => 'usuarios', 'plugin' => false), array('escape' => false, 'title' => 'Sair', 'class' => 'btn btn-primary', 'style' => 'margin:10px 7px 0 0;'));
+                        ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <cake:nocache>
+
+    </cake:nocache>
+    <!-- Se você gostaria que algum tipo de menu seja mostrado em todas as suas views, insira ele aqui -->
+    <!-- Large modal -->
+
+    <div id="loading" style="display: none;">
+        <div id="innerLoading">
+            Processando...
+            <?php echo $this->Html->image('ajaxBarGreen.gif'); ?>
+        </div>
+    </div>
+    <div id="header" align="center">
+
+    </div>
+    <div class="noPrint" style="display: none;text-align: center; line-height: 36px; background-color: #FFFF33; font-weight: bold;  font-family: 'Time new Roman'; clear: both; height: 40px; ">
+        <span>
+            Por motivo de manutenção em nossos servidores, o sistema SIGAD ficará indisponível a partir das 18:30, com
+            previsão de retorno às 20:00.
+        </span>
+    </div>                
+    <?php echo $this->element('menu'); ?>
+    <!-- � aqui que eu quero que minhas views apare�am -->
+    <div class="container-fluid">
+        <div class="row">    
+            <?php
+            $class = "col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main";
+            if ((isset($isAtendente) && ($isAtendente)) || (isset($isDefensor) && ($isDefensor)))
+                $class = "col-sm-7 col-sm-offset-3 col-md-8 col-md-offset-2 main";
+            ?>
+            <div class="<?php echo $class; ?>">
+
+                <div class="noPrint" id="message"><?php echo $this->Session->flash(); ?></div>
+
+                <h3 class="page-header"><?php echo $this->fetch('title'); ?></h3>
+                <div class="acoes">
+                    <?php
+                    echo $this->element('acoes_assistido');
+                    ?>
+                </div>
+                <div id="titulo">                    
+                    <?php
+                    echo $this->fetch('content');
+                    ?>
+                    <?php //echo $this->element('sql_dump');  ?>
+                    <div id="legenda" class="noPrint">
+                        <?php
+                        echo isset($legenda) ? $legenda : "";
+                        ?>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+                <div class="acoes">
+                    <?php
+                    echo $this->element('acoes_assistido');
+                    ?>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <?php echo $this->element('painel_senha'); ?>    
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">        
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <?php
+    echo $this->Js->writeBuffer(array('cache' => FALSE));
+    ?>
+    <script type="text/javascript">
+        $('#modal').on('hidden.bs.modal', function () {
+            $(this).removeData('bs.modal');
+        });
+    </script>    
+</body>
+</html>
+
+<?php
+/** MENSAGENS */
+$this->Util->setaValorPadrao($msgAlert, '');
+if (!empty($msgAlert)) {
+    echo "<script> alert('$msgAlert'); </script>";
+    unset($msgAlert);
+}
+
+$this->Util->setaValorPadrao($redirect, '');
+if (!empty($redirect)) {
+    echo "<script>
+        window.location='$redirect';
+    </script>";
+    unset($redirect);
+}
+?>

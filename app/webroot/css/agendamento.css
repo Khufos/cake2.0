@@ -1,0 +1,44 @@
+.espera{
+    background-color: #FFF1A8;
+}
+
+.presente{
+    background-color: #3399ff;
+}
+
+.ciente{
+    background-color: yellow;
+}
+
+
+.atendido{
+    background-color: #4A9166;    
+}
+
+.cancelado{
+    background-color: tomato;
+}
+
+.remanejado{
+    background-color: #b3c7e1;
+}
+
+.plantao { 
+    background-color: #3399ff;    
+}
+
+#legenda_inicial {
+    border-radius: 10px;
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    background-color: #C1FFC1;
+}
+
+#legenda_retorno {
+    border-radius: 10px;; /* Para Firefox */
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    background-color: #E0C000;    
+}

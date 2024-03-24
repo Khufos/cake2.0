@@ -1,0 +1,97 @@
+/* CSS Document */
+body{
+    padding:0;
+    margin: 0;
+    background:none;
+}
+
+#corpo {
+    width:680px;
+    margin:0px;
+    margin-left:-350px;
+    padding:0px;
+    background:none;
+}
+
+
+#corpo .paisagem {	
+    width:1020px !important; 
+    margin:0px;
+    margin-left:-170px;
+    padding:0px;
+    background:none;
+}
+
+/* Cabecalho */
+#header, #barra_topo, #pessoa, #rodape, #ajaxLoad, .noPrint, #menu{
+    display:none !important;
+}
+
+
+#titulo {
+    border:none;
+    background-color: none;
+}
+
+
+.tbl_borda_fina{
+    border-style:solid;
+    border-width:1px;
+    border-collapse:collapse;
+}
+
+
+/*Css da lista de ralatorios GED*/
+.tbl_list{
+    background-color:#669966;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10pt;
+    font-style:inherit;
+    border-collapse:collapse;
+}
+
+.tbl_list caption{	
+    color:#000000;
+    margin-top:-21px;	
+    font-size:15pt;
+    font-weight:normal;
+    margin-bottom:-0px;
+}
+
+
+.borda_style {
+    border:thick;
+    border-collapse:collapse;
+    border-style:outset;
+    border-color:#000033;
+}
+.fontged {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+}
+
+.quebra {
+    page-break-before:always;
+}
+
+#titulo,#tudo,#rodape,#aba_principal,#acoes,#box_content{
+    background: #FFFFFF !important;    
+}
+
+table{
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+
+#tudo{
+    width:100% !important;
+    padding-left: 135px;
+}
+
+.consultaProcessual{
+    width: 100%; 
+    /*background-color: white;*/ 
+    /*margin-left: -10px !important;*/ 
+    border-radius: 0 !important; 
+    box-shadow: none !important;
+}

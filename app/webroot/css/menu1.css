@@ -1,0 +1,67 @@
+/* ----- Menu-Lateral ----- */
+
+.urbangreymenu{
+/*largura menu*/
+width: 130px; 
+*width: 150px; 
+padding-right:10px;
+padding-left:10px;
+padding-top:15px;
+float:left;
+}
+
+.urbangreymenu .headerbar{
+font: bold 11px Verdana;
+color: black;
+xbackground: #CCCCCC; 
+background: url(../img/btn_menu.jpg) repeat-x;
+margin-bottom: 0; /*se preciso, coloque margem entre o t�tulo do menu e o conte�do*/
+text-transform: uppercase;
+text-align: center;
+padding: 7px 0 7px 0px; /*31px � o espa�o � esquerda do t�tulo do menu*/
+}
+
+.urbangreymenu .headerbar a{
+text-decoration: none;
+color: white;
+display: block;
+}
+
+.urbangreymenu ul{ /* reseta listas */
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.urbangreymenu li { /*reseta �tens de lista */
+padding:0px;
+text-indent:0px;
+}
+
+.urbangreymenu ul li{
+padding-bottom: 2px; /*espa�o entre cada �tem de lista*/
+}
+
+.urbangreymenu ul li a{
+font: normal 11px Arial;
+color: black;
+background: #C0DCA9;
+display: block;
+padding: 5px 0;
+line-height: 17px;
+padding-left: 8px;
+text-decoration: none;
+}
+
+.urbangreymenu ul li a:visited{
+color: black;
+}
+
+
+.urbangreymenu ul li a:hover{ 
+color: white;
+background: #A3CBA9;;
+}
+/* -----Fim Menu-Lateral ----- */
+
+/*---- Usado no Menu antigo padrão ----*/

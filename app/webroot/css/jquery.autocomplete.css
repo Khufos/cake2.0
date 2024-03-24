@@ -1,0 +1,4 @@
+ALTER TABLE `sigad`.`resolucao_extrajudicial_saudes` 
+DROP FOREIGN KEY `fk_resol_extrajud_sde_orgao_destinatario`;
+ALTER TABLE `sigad`.`resolucao_extrajudicial_saudes` 
+DROP INDEX `fk_resol_extrajud_sde_orgao_destinatario_idx` ;

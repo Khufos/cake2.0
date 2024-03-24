@@ -1,0 +1,57 @@
+/* 
+    Document   : bootstrap-impressao
+    Created on : 11/11/2014, 14:11:04
+    Author     : ronaldo.santos
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#impressao{
+    margin: 0 auto;
+}
+
+.tableImp{
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    width: 680px;
+}
+
+.tableImp td{
+    border: solid 1px #000000 ;
+    border-collapse: collapse;
+    padding:2px;
+    font-family: verdana, sans-serif;
+    font-size:9pt;
+}
+
+.tableImp th{
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    font-size: 10pt;
+    padding:2px;
+}
+
+.tableImp thead{
+    background-color:#A7A7A7;
+}
+
+.tableImp caption{
+    font-family: Helvetica Narrow, sans-serif;
+    font-size: 11pt;    
+    font-weight:bold;
+    padding: 2px;
+}
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+    border-top: 1px solid #ddd;
+    line-height: 1.1;
+    padding: 2px;
+    vertical-align: top;
+}

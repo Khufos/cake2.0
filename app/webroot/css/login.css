@@ -1,0 +1,22 @@
+/* Tele de autenticacao*/
+#logo-login{
+    text-align: center;
+}
+#title-login{
+    margin: 14px 10px 0 0;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+#container-login{
+    margin: 50px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    #marca img {
+        margin:10px 0 0 10px;
+    }
+}
+
+
+

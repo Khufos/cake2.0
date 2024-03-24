@@ -1,0 +1,66 @@
+#tabExpedientes{
+    padding-top: 0px;
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.26);
+}
+#tabExpedientes>div:nth-child(1){
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.26);
+    border-radius: 3px;
+    background: white;
+}
+.expedientes-tabela{
+    font-family: 'Open Sans regular', Arial, Verdana, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    clear: both;
+    margin-bottom: 8px;
+}
+.expedientes-tabela thead{
+    background: white;
+    border-bottom: 2px solid black !important;
+}
+tr.subthead{
+    background: white;
+}
+tr.subthead th {
+    border: none;
+    padding: 8px 4px;
+    /* font-family: 'Open Sans regular'; */
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    text-align: left !important;
+}
+
+table.expedientes-tabela > tbody{
+    padding-bottom: 12px;
+}
+table.expedientes-tabela > tbody > tr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table.expedientes-tabela > tbody > tr:nth-child(even){
+    background-color: white;
+}
+.expedicao-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modalConfirmacao .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+ #modalConfirmacao .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 12%;
+}

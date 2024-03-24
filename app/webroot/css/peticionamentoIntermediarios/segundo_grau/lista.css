@@ -1,0 +1,50 @@
+#modalAlertasBody{
+    background-color: white !important;
+    padding: 4px !important;
+    max-height:180px !important;
+    overflow:auto;
+}
+.msg-error-row{
+    background-color: #FBDECF;
+    padding: 6px 0px;
+    border: 1px solid #F4CAC3;
+    color: #AF3D44;
+    margin-bottom: 2px;
+}
+.linha-vermelha{
+    background-color: #FBDECF !important;
+    color: #AF3D44 !important;
+}
+
+.botao-acoes {
+    color: #136938;
+    cursor: pointer;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.pagination > li > span, .disabled{
+    background-color: #e3e3e3 !important;
+    border-color: rgb(221, 221, 221) !important;
+    color: #938f8f !important;
+    cursor: default;
+    z-index: 2;
+}
+
+.pagination > li > a {
+    cursor: pointer;
+}
+
+.pagination > li > span:hover {
+    z-index: 3;
+    color: #000;
+    background-color: #fff;
+    border-color: #ddd;
+}

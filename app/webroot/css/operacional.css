@@ -1,0 +1,416 @@
+.captionA{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #cccccc;
+    width: auto;
+}
+
+.captionForm{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #993;
+    width: auto;
+}
+
+.borda{
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.borda td{
+    border-collapse: collapse;
+    padding: 1px 3px;
+    border-color: #000000;
+}
+.borda th{
+    border-collapse: collapse;
+    padding: 1px 3px;
+    border-color: #000000;
+}
+
+.borda_fina{
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 1px;
+}
+
+img{
+    cursor: pointer;
+}
+div.auto_complete    {
+    position         :absolute;
+    width            :250px;
+    background-color :white;
+    border           :1px solid #888;
+    margin           :0px;
+    padding          :0px;
+}
+li.selected    { background-color: #ffb; }
+
+img{
+    cursor: pointer;
+}
+
+.submit{
+    float: right;
+}
+
+.direita {
+    float: right;
+}
+
+.esquerda {
+    float: left;
+}
+
+.meio{
+    float: none;
+}
+
+.primeiro {
+    white-space: nowrap;
+    float: right;
+}
+
+.verde {
+    margin-left: 10px;
+    font-family: Verdana;
+    font-size: 15px;
+    color: black;
+    background: #99CC99;
+    width: 500px;
+}
+
+.vermelho {
+    margin-left: 10px;
+    font-family: Verdana;
+    font-size: 15px;
+    color: black;
+    background: #E0ABBA;
+    width: 500px;
+}
+
+.azul {
+    margin-left: 10px;
+    font-family: Verdana;
+    font-size: 15px;
+    color: black;
+    background: #D6EFFC;
+    width: 500px;
+}
+
+.asterisco{
+    color: red;
+}
+
+.required{
+    color: red;
+}
+
+#login{
+    xbackground:#cccccc;
+    xheight:200px;
+    xwidth:400px;
+    xborder:medium solid green;
+    text-align: center;
+    margin: 0 auto;
+    xmargin-left: 250px;
+}
+
+.nome{
+    width:280px
+}
+.data, .mesAno{
+    width:72px
+}
+.hora{
+    width:50px
+}
+
+.hhmm{
+    width:45px
+}
+
+#login table{
+    margin-top: 69px;
+}
+
+#legenda{
+    text-align: right;
+    height: 50px;
+    xwidth:768px;
+    clear: right;
+}
+
+#loading{
+    position: fixed;
+    margin: 0;
+    background-color: #FFFFFF;
+    border: 4px solid #CCCCCC;
+    padding: 3px;
+    margin-left: -130px;
+    width: 223px;
+    top: 50%;
+    left: 50%;
+    bottom: 0px;
+    height:31px;
+    z-index: 999999;
+    vertical-align: top;
+
+}
+
+#loading #innerLoading {
+    width: 31px;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    z-index: 0;
+}
+
+#nowLoading{
+    margin: 0;
+    background-color: #FFF1A8;
+    border: 1px solid #C1A500;
+    padding: 3px;
+    margin-left: -130px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    bottom: 0px;
+    display:none;
+    height:31px;
+    z-index: 0;
+    vertical-align: top;
+}
+
+div.auto_complete {
+    position         :absolute;
+    width            :250px;
+    background-color :white;
+    border           :1px solid #888;
+    margin           :0px;
+    padding          :0px;
+}
+
+li.selected    {
+    background-color: #ffb;
+}
+
+.label{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+
+
+.label_bold{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.label_radio{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000;
+    text-align: left;
+    xmargin-left: -5px;
+}
+
+.separador{
+    border-bottom:solid 2px;
+    width: 600px;
+}
+
+
+/*.borda{
+    border-style: none;
+    width:600px;
+    min-height: 890px;
+}*/
+
+@media print{
+    .imp_rodape{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        width:600px;
+        min-height:120px;
+        position: fixed;
+        bottom: 0px;
+    }
+}
+.imp_rodape{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    width:600px;
+}
+
+.linha{
+    border-bottom:solid 3px;
+}
+
+.txt{
+    padding-bottom: 15px;
+    xpadding-top: 20px;
+}
+
+.padding td{
+    padding-right: 10px;
+}
+
+.controle{
+    border: 1px solid black;
+    width:600px;
+    min-height: 800px;
+    margin-bottom: 5px;
+    page-break-after:always;
+}
+
+.titulo, .subtitulo{
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.subtitulo{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+.espaco1 td{
+    padding-left: 100px;
+    background-color: Fuchsia;
+}
+
+.middle{
+    vertical-align: middle;
+}
+
+.hide{
+    display:none;
+}
+
+
+#historico .scroll{
+    width:100%;
+}
+
+.novoItem{
+    background-color: #FFFFFF;
+    font-family: serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #000000;
+    padding: 2px 4px 1px 10px;
+}
+.gridRelatorio
+{
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.gridFonte /* tamanho e tipo de fonte em todo relatorio */
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+}
+
+.gridLargura
+{
+    width: 100%;
+}
+
+.gridZebra /* class adicionada no operacional com jQuery -> ('.zebra') */
+{
+    background-color: #E4F5EF;
+}
+
+.gridTitulo /* titulo da grid */
+{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px;
+    background:url('../img/relatorios/gradhead.png') repeat-x;
+    color: #FFFFFF;
+    border-top: 2px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 2px solid;
+    text-align: center;
+}
+
+.gridTituloBorda th /* tipo de borda no titulo da grid */
+{
+    border: solid 1px;
+    border-color: #fff;
+}
+
+.gridBordaTd td /* tipo de borda no interior da grid (td) */
+{
+    padding-right: 2px;
+    border-bottom: 1px solid ;
+    border-left:  1px solid ;
+    border-right:   1px solid ;
+    border-top: 1px solid ;
+    border-color: #2F8063;
+}
+
+.gridRelatorio tfoot tr td /* tipo de fonte no rodapé da grid */
+{
+    font-size: 12px;
+}
+
+.gridRelatorio tbody tr:hover td /* efeito hover na grid */
+{
+    background: #D9FFD9;
+    /*  color: #003300; */
+}
+
+.percInicio
+{
+    color:#990000;
+
+}
+.perc_Parcial
+{
+    color :#FF6600;
+}
+.perc_Meio
+{
+    color :#0066CC;
+
+}
+.perc_Mediano
+{
+    color:#99CC66;
+
+}
+.perc_fim
+{
+    color:green;
+}
+
+.explicacao {
+    color:maroon;
+    font-size:09px;
+}

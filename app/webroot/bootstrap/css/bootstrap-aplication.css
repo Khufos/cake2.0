@@ -1,0 +1,511 @@
+/* 
+    Document   : bootstrap-aplication
+    Created on : 11/11/2014, 14:11:04
+    Author     : ronaldo.santos
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+input.radio-sigad{
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+div[class~=radio-div] label{
+    font-weight: normal;
+}
+/* ESTRUTURA DO SIGAD*/
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    background: url('../../img/bg4.png') fixed;
+}
+
+li.oculto{
+    display: none;
+}
+/*
+ * Global add-ons
+ */
+.nav-tabs {
+    margin-bottom: 15px;
+    border-color: #a7a7a7;
+}
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar-left, .sidebar-right {
+    display: none;
+}
+@media (min-width: 768px) {
+
+    .sidebar-left {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+        -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+        box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+    }
+
+    .sidebar-right {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        display: block;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #eee;
+        border-right: 1px solid #eee;
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+        -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+        box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+    }
+}
+
+
+
+/* Sidebar navigation */
+/*.nav-sidebar {
+  margin-right: -21px;  20px padding + 1px border 
+  margin-bottom: 20px;
+  margin-left: -20px;
+}*/
+.nav-sidebar li{
+    border-bottom: solid 1px #CCCCCC;
+    border-top: solid 1px #FFFFFF;
+}
+.nav-sidebar .submenu{
+    background: #e6e6e6;
+    padding-left: 10px;
+    border-left: 4px solid #248d51;
+}
+.nav-sidebar a {
+    text-transform: uppercase;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+a { color: #136938; text-decoration: none; }
+a:hover, a:focus { color: #248d51; text-decoration: underline; }
+.alert{ width: 500px; margin: 0 auto; position: absolute; z-index: 2000; }
+#marca img { float: left; margin: 10px 10px 0 0; }
+/* #marca span { float: left; margin: 15px 0 0 0; color: #fff} */
+.navbar-inverse .navbar-text, .navbar-inverse .navbar-brand{ color: #fff; }
+.navbar-inverse .navbar-nav > li > a {color: #def3e7;}
+
+#loading{
+    position: fixed;
+    margin: 0;
+    background-color: #FFFFFF;
+    border: 4px solid #CCCCCC;
+    padding: 3px;
+    margin-left: -130px;
+    width: 247px;
+    top: 50%;
+    left: 50%;
+    bottom: 0px;
+    height:56px;
+    z-index: 999999;
+    vertical-align: top;
+
+}
+
+#loading #innerLoading {
+    width: 233px;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    z-index: 0;
+}
+
+#nowLoading{
+    margin: 0;
+    background-color: #FFF1A8;
+    border: 1px solid #C1A500;
+    padding: 3px;
+    margin-left: -130px;
+    width: 247px;
+    top: 50%;
+    left: 50%;
+    bottom: 0px;
+    display:none;
+    height:56px;
+    z-index: 0;
+    vertical-align: top;
+}
+.actions a{
+    margin: 0 3px;
+}
+
+.aviso{
+    width: 10px;
+    float: left;
+    height: 10px;
+    cursor: pointer;
+}
+.table{
+    font-size: 13px;
+}
+
+.table .glyphicon{
+    font-size: 17px;
+}
+
+.frequencia-atendimento{
+    width: 600px;
+}
+
+.glyphicons-user-add{
+    background: url('../icons/glyphicons-7-user-add.png') no-repeat;
+    padding: 0 0 0 34px;
+}
+.glyphicons-user-list{
+    background: url('../icons/glyphicons-115-list.png') no-repeat;
+    padding: 0 0 0 34px;
+}
+.glyphicons-search{
+    background: url('../icons/glyphicons-28-search.png') no-repeat;
+    padding: 0 0 0 34px;
+}
+
+.glyphicons-edit{
+    background: url('../icons/glyphicons-151-edit.png') no-repeat;
+    padding: 0 0 0 34px;
+}
+
+.glyphicons-remove{
+    background: url('../icons/glyphicons-17-bin.png') no-repeat;
+    padding: 0 0 0 34px;
+}
+
+.print{
+    background: url('../icons/glyphicons-16-print.png') no-repeat;
+    padding: 0 0 0 34px;
+}
+
+.marginbottom10{
+    margin-bottom: 10px;
+}
+
+.margintop10{
+    margin-top: 10px;
+}
+
+.margintop20{
+    margin-top: 20px;
+}
+
+.loader-populi{
+    display: none;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #b6b5b5;
+}
+
+.oculto{
+    display: none;
+}
+
+.cake-error{
+    z-index: 10000;
+    position: relative;
+    background: #F9F2CC;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.scroll{
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.scroll-area{
+    max-height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+.ui-datepicker-trigger{
+    position: relative;
+    float: right;
+    bottom: 23px;
+    right: 5px;
+}
+.selecionado{
+    background: #A2CD5A;
+}
+.acoes{
+    clear: both;
+    height: 30px;
+    width: 100%;
+    margin:10px 0 10px;
+}
+
+#gestaFila{
+    padding: 20px;
+}
+
+.espera{
+    background-color: #FFF1A8;
+}
+
+.presente{
+    background-color: #3399ff;
+}
+
+.ciente{
+    background-color: yellow;
+}
+
+
+.atendido{
+    background-color: #4A9166;    
+}
+
+.cancelado{
+    background-color: tomato;
+}
+
+.remanejado{
+    background-color: #b3c7e1;
+}
+
+.plantao { 
+    background-color: #3399ff;    
+}
+
+.situacaoAgen { 
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    #marca img {
+        margin:10px 0 0 10px;
+    }
+}
+.table-mobile{
+    font-size: 0.8em;
+}
+
+.icone-agendamento{
+    margin: 0 10px 0 0;
+}
+#logo-login{
+    margin-bottom: 15px;
+}
+.menu-fila{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+.menu-fila li{
+    margin: 0 0 5px 0;
+}
+
+input[type="submit"], button[type="button"]{
+    float:right;
+}
+
+table tr.Acao_editada {
+    background-color:#CCFF99;
+}
+
+.well, .table{
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.2);
+}
+
+table{
+    background: #eee;
+}
+
+.modal-body, .panel-body{
+    background: #e1e1e1;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    border-color: #a7a7a7;
+}
+
+.nav-tabs > li > a {
+  background: #d5d5d5;
+  border-color: #eee #eee #a7a7a7;
+}
+.nav-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+
+
+.label {
+     font-size: 12px;
+     color: #333333;
+}
+
+.amostrar{
+    display: inline !important;
+}
+
+.pagination > li > a, .pagination > li > span{
+     color:black;       
+}
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #136938;
+    border-color: #337ab7;
+    color: #fff;
+    cursor: default;
+    z-index: 2;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: #136938;
+    border-color: #fff;
+}
+
+/* https://startbootstrap.com/template-overviews/sb-admin-2/ */
+.huge {
+	font-size: 40px;
+}
+.panel-green {
+	border-color: #5cb85c;
+}
+.panel-green > .panel-heading {
+	border-color: #5cb85c;
+	color: white;
+	background-color: #097543;
+}
+.panel-green > a {
+	color: #5cb85c;
+}
+.panel-green > a:hover {
+	color: #3d8b3d;
+}
+.panel-red {
+	border-color: #d9534f;
+}
+.panel-red > .panel-heading {
+	border-color: #d9534f;
+	color: white;
+	background-color: #d9534f;
+}
+.panel-red > a {
+	color: #d9534f;
+}
+.panel-red > a:hover {
+	color: #b52b27;
+}
+.panel-yellow {
+	border-color: #f0ad4e;
+}
+.panel-yellow > .panel-heading {
+	border-color: #f0ad4e;
+	color: white;
+	background-color: #ff9600;
+}
+.panel-yellow > a {
+	color: #f0ad4e;
+}
+.panel-yellow > a:hover {
+	color: #df8a13;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color: #fff;
+	background-color: #0b633b;
+}
+
+.badge-success {
+	color: #fff!important;
+	background-color: #007547!important;
+}

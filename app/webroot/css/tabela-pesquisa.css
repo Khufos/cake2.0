@@ -1,0 +1,28 @@
+.recente{
+    background-color: #98FB98;
+    /*        border-right: 2px solid green;*/
+}
+
+.medio{
+    background-color: #ADD8E6;
+    /*        border-right: 2px solid yellow;*/
+
+}
+
+.antigo{
+    background-color: #EEE9BF;
+    /*        border-right: 2px solid red;*/
+}
+
+.naoAtendido{
+    background-color: #CD5C5C;
+    /*        border-right: 2px solid blue;*/
+}
+
+.legenda td{
+    padding-left: 10px;
+}
+
+.aviso{
+    margin-right: 4px;
+}
