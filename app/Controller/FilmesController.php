@@ -17,11 +17,11 @@ class FilmesController extends AppController {
         $this->set(compact('filmes'));
     }
     
-    public function add($id = null) {
-        $id = $this->request->data('id');
-        exit($id);
-    }
+    public function add() {
+        var_dump($this->request->data);
+        die();
     
+    }
     public function recive($id = null) {
         $id = $this->request->data;
         pr($id);

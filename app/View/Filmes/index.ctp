@@ -195,7 +195,16 @@ $configData = [
         var idDefensor = $('#idDefensor').attr('data-id');
          var dataInicio = $('#dataInicio').val();
         var dataFim = $('#dataFim').val();
-        alert("Id:" + idDefensor + "\n" + "Primeira data: " + dataInicio + "\n" + "Segunda data: " + dataFim);
+        // alert("Id:" + idDefensor + "\n" + "Primeira data: " + dataInicio + "\n" + "Segunda data: " + dataFim);
+        $.ajax({
+            url: "<?php echo $this->Html->url(array('controller' => 'filmes', 'action' => 'add')); ?>",
+            method:'POST',
+            data:{id: idDefensor , datainicio: dataInicio , datafim: dataFim },
+            dataType:'json'
+
+        }).done(function(result){
+            console.log(result);
+        });
 
     });
 </script>
