@@ -24,19 +24,31 @@ class FilmesController extends AppController {
     
     }
     public function recive() {
-        $this->autoRender = false;
-        if (isset($this->data['IdDefensor']) && isset($this->data['dataInicio']) && isset($this->data['dataFim'])) {
-            $IdDefensor= $this->data['IdDefensor'];
-            $DataRetificadaInicio = $this->data['dataInicio'];
-            $DataRetificadaFim = $this->data['dataFim'];
-            var_dump($IdDefensor);
-            
-          
-        } 
-
+        $this->autoRender = false; // Desabilita a renderização de uma view.
         
+        // Verifica se os dados necessários estão presentes.
+        if (isset($this->request->data['IdDefensor']) && isset($this->request->data['dataInicio']) && isset($this->request->data['dataFim'])) {
+            $IdDefensor = $this->request->data['IdDefensor'];
+            $DataRetificadaInicio = $this->request->data['dataInicio'];
+            $DataRetificadaFim = $this->request->data['dataFim'];
+    
+            // Carrega o modelo necessário.
+            $this->loadModel('Filme');
+            
+            // Chama a função do modelo e passa os dados.
+            $result = $this->Filme->alterandoDataRetificada($IdDefensor, $DataRetificadaInicio, $DataRetificadaFim);
+    
+            // Exemplo de como retornar uma resposta JSON
+            if ($result) {
+                echo json_encode(['success' => true, 'message' => 'Dados atualizados com sucesso.']);
+            } else {
+                echo json_encode(['success' => false, 'message' => 'Falha ao atualizar os dados.']);
+            }
+        } else {
+            // Resposta caso algum dado esteja faltando.
+            echo json_encode(['success' => false, 'message' => 'Dados incompletos.']);
+        }
     }
-
     public function addVitima($id = null) {
         pr($id);
         die();
