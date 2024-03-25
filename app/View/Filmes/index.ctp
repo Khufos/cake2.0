@@ -197,9 +197,14 @@ $configData = [
         var dataFim = $('#dataFim').val();
         // alert("Id:" + idDefensor + "\n" + "Primeira data: " + dataInicio + "\n" + "Segunda data: " + dataFim);
         $.ajax({
-            url: "<?php echo $this->Html->url(array('controller' => 'filmes', 'action' => 'add')); ?>",
+            url:'/public_html/projeto_cinema/filmes/recive/E?trs=1/',
             method:'POST',
-            data:{id: idDefensor , datainicio: dataInicio , datafim: dataFim },
+            data:{
+                IdDefensor: idDefensor ,
+                dataInicio: dataInicio,
+                dataFim:dataFim
+            },
+
             dataType:'json'
 
         }).done(function(result){

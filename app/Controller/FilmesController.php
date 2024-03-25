@@ -18,14 +18,21 @@ class FilmesController extends AppController {
     }
     
     public function add() {
+        $this->autoRender = false;
         var_dump($this->request->data);
         die();
     
     }
-    public function recive($id = null) {
-        $id = $this->request->data;
-        pr($id);
-        die();
+    public function recive() {
+        $this->autoRender = false;
+        if (isset($this->data['IdDefensor']) && isset($this->data['dataInicio']) && isset($this->data['dataFim'])) {
+            $IdDefensor= $this->data['IdDefensor'];
+            $DataRetificadaInicio = $this->data['dataInicio'];
+            $DataRetificadaFim = $this->data['dataFim'];
+            var_dump($IdDefensor);
+            
+          
+        } 
 
         
     }
